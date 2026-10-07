@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>You're Offline – Abdusee Tips</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root { --bg:#080f1e; --text:#f1f5f9; --muted:#94a3b8; --accent:#0ea5e9; --border:rgba(255,255,255,0.08); }
+    [data-theme="light"] { --bg:#f8fafc; --text:#0f172a; --muted:#64748b; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); display: flex; align-items: center; justify-content: center; min-height: 100vh; text-align: center; padding: 2rem; }
+    .icon { font-size: 4rem; margin-bottom: 1.5rem; }
+    h1 { font-size: 1.75rem; font-weight: 700; margin-bottom: 0.75rem; }
+    p { color: var(--muted); margin-bottom: 2rem; max-width: 360px; line-height: 1.7; }
+    .btn { display: inline-block; padding: 0.7rem 1.75rem; background: var(--accent); color: white; border-radius: 8px; font-weight: 600; text-decoration: none; cursor: pointer; border: none; font-family: inherit; font-size: 0.95rem; }
+    .btn:hover { opacity: 0.9; }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="icon">📡</div>
+    <h1>You're Offline</h1>
+    <p>It looks like your internet connection is unavailable. Some previously visited pages are still available from cache.</p>
+    <button class="btn" onclick="location.reload()">Try Again</button>
+  </div>
+</body>
+</html>

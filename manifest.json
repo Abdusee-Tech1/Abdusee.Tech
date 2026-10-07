@@ -1,0 +1,86 @@
+{
+  "name": "Abdusee Tips – Learn. Build. Grow.",
+  "short_name": "Abdusee Tips",
+  "description": "Premium tech education platform covering AI Tools, Programming, Web Development, Mobile Apps, Online Income, and Digital Skills.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#080f1e",
+  "theme_color": "#0ea5e9",
+  "orientation": "portrait-primary",
+  "lang": "en",
+  "categories": ["education", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "assets/icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "AI Tools",
+      "short_name": "AI Tools",
+      "description": "Browse AI tool tutorials",
+      "url": "/#ai-tools",
+      "icons": [{ "src": "assets/icon-96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Tutorials",
+      "short_name": "Tutorials",
+      "description": "Browse all tutorials",
+      "url": "/#tutorials",
+      "icons": [{ "src": "assets/icon-96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Online Income",
+      "short_name": "Income",
+      "description": "Earn money with your skills",
+      "url": "/#income",
+      "icons": [{ "src": "assets/icon-96.png", "sizes": "96x96" }]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/screenshot-desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Abdusee Tips Homepage"
+    },
+    {
+      "src": "assets/screenshot-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Abdusee Tips on Mobile"
+    }
+  ],
+  "prefer_related_applications": false,
+  "related_applications": []
+}

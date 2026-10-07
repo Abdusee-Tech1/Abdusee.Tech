@@ -1,0 +1,12 @@
+# robots.txt — Abdusee Tips
+# https://abduseeTips.com
+
+User-agent: *
+Allow: /
+
+# Disallow admin or private paths (none currently, but good practice)
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://abduseeTips.com/sitemap.xml

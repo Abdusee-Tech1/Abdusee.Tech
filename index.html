@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- ═══ PRIMARY SEO META ═══ -->
+  <title>Abdusee Tips – Learn. Build. Grow. | Tech Education by Abdusalam Ahmed Kasim</title>
+  <meta name="description" content="Abdusee Tips is a premium technology education platform covering AI Tools, Programming, Web Development, Mobile Apps, Online Income, Freelancing, and Digital Skills." />
+  <meta name="keywords" content="AI tools, programming tutorials, web development, mobile apps, online income, freelancing, tech education, digital skills, Abdusalam Ahmed Kasim" />
+  <meta name="author" content="Abdusalam Ahmed Kasim" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="canonical" href="https://abduseeTips.com/" />
+
+  <!-- ═══ OPEN GRAPH ═══ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Abdusee Tips – Learn. Build. Grow." />
+  <meta property="og:description" content="Premium tech education platform covering AI, Programming, Web Dev, Mobile Apps, Online Income &amp; more." />
+  <meta property="og:url" content="https://abduseeTips.com/" />
+  <meta property="og:site_name" content="Abdusee Tips" />
+  <meta property="og:image" content="https://abduseeTips.com/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- ═══ TWITTER CARD ═══ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@AbduseeTips" />
+  <meta name="twitter:creator" content="@AbduseeTips" />
+  <meta name="twitter:title" content="Abdusee Tips – Learn. Build. Grow." />
+  <meta name="twitter:description" content="Premium tech education platform covering AI, Programming, Web Dev &amp; more." />
+  <meta name="twitter:image" content="https://abduseeTips.com/assets/og-image.png" />
+
+  <!-- ═══ PWA ═══ -->
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="assets/icon-192.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Abdusee Tips" />
+
+  <!-- ═══ FONTS ═══ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- ═══ STYLESHEET ═══ -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ═══ SCHEMA.ORG STRUCTURED DATA ═══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Abdusee Tips",
+    "url": "https://abduseeTips.com",
+    "description": "Premium technology education platform covering AI Tools, Programming, Web Development, Mobile Apps, Online Income, and Freelancing.",
+    "publisher": {
+      "@type": "Person",
+      "name": "Abdusalam Ahmed Kasim",
+      "url": "https://abduseeTips.com/about"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://abduseeTips.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Abdusalam Ahmed Kasim",
+    "jobTitle": "Full-Stack Developer \u0026 Tech Educator",
+    "url": "https://abduseeTips.com",
+    "sameAs": [
+      "https://youtube.com/@AbduseeTips",
+      "https://github.com/AbduseeTips",
+      "https://t.me/AbduseeTips"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+       SCROLL PROGRESS BAR
+  ═══════════════════════════════════════════════ -->
+  <div id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <nav class="nav-container" aria-label="Main navigation">
+
+      <!-- Logo -->
+      <a href="#home" class="nav-logo" aria-label="Abdusee Tips – Home">
+        <div class="logo-mark" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="28" height="28" rx="7" fill="url(#logoGrad)"/>
+            <path d="M8 20L14 8L20 20" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 16H18" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+            <defs>
+              <linearGradient id="logoGrad" x1="0" y1="0" x2="28" y2="28">
+                <stop offset="0%" stop-color="#0ea5e9"/>
+                <stop offset="100%" stop-color="#10b981"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span class="logo-text">Abdusee<span class="logo-accent">Tips</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links" role="list">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#tutorials" class="nav-link">Tutorials</a></li>
+        <li><a href="#ai-tools" class="nav-link">AI Tools</a></li>
+        <li><a href="#income" class="nav-link">Online Income</a></li>
+        <li><a href="#blog" class="nav-link">Blog</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Search -->
+        <button class="nav-icon-btn" id="searchToggle" aria-label="Open search" aria-expanded="false">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <!-- Theme -->
+        <button class="nav-icon-btn" id="themeToggle" aria-label="Toggle theme" aria-pressed="false">
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+        <!-- PWA Install -->
+        <button class="btn-install" id="installBtn" aria-label="Install App" style="display:none">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Install
+        </button>
+        <!-- Mobile Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#home" class="mobile-link" onclick="closeMobileMenu()">🏠 Home</a></li>
+        <li><a href="#tutorials" class="mobile-link" onclick="closeMobileMenu()">📚 Tutorials</a></li>
+        <li><a href="#ai-tools" class="mobile-link" onclick="closeMobileMenu()">🤖 AI Tools</a></li>
+        <li><a href="#income" class="mobile-link" onclick="closeMobileMenu()">💰 Online Income</a></li>
+        <li><a href="#blog" class="mobile-link" onclick="closeMobileMenu()">✍️ Blog</a></li>
+        <li><a href="#about" class="mobile-link" onclick="closeMobileMenu()">👤 About</a></li>
+        <li><a href="#contact" class="mobile-link" onclick="closeMobileMenu()">📧 Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay" role="search" aria-hidden="true">
+      <div class="search-box">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="search" id="searchInput" placeholder="Search tutorials, AI tools, income guides…" autocomplete="off" aria-label="Search site content" />
+        <button id="searchClose" aria-label="Close search">✕</button>
+      </div>
+      <div class="search-results" id="searchResults" aria-live="polite"></div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ═══════════════════════════════════════════════
+         HERO SECTION
+    ═══════════════════════════════════════════════ -->
+    <section class="hero" id="home" aria-labelledby="heroHeading">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-grid"></div>
+      </div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge" data-animate="fade-up">
+            <span class="badge-dot"></span>
+            New AI Tools Tutorials Every Week
+          </div>
+          <h1 id="heroHeading" class="hero-title" data-animate="fade-up" data-delay="100">
+            Learn Smarter.<br/>
+            <span class="gradient-text">Build Faster.</span><br/>
+            Grow Bigger.
+          </h1>
+          <p class="hero-desc" data-animate="fade-up" data-delay="200">
+            Abdusee Tips is your go-to platform for AI tools, programming, web &amp; mobile development, online income strategies, and practical digital skills — taught by Abdusalam Ahmed Kasim.
+          </p>
+          <div class="hero-actions" data-animate="fade-up" data-delay="300">
+            <a href="#tutorials" class="btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              Start Learning Free
+            </a>
+            <a href="#ai-tools" class="btn-ghost">Explore AI Tools →</a>
+          </div>
+          <div class="hero-social" data-animate="fade-up" data-delay="400">
+            <a href="https://youtube.com/@AbduseeTips" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="YouTube channel">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              YouTube
+            </a>
+            <a href="https://t.me/AbduseeTips" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="Telegram channel">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+              Telegram
+            </a>
+            <a href="https://github.com/AbduseeTips" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="GitHub profile">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-card-stack">
+            <div class="floating-card card-1">
+              <div class="fc-icon">🤖</div>
+              <div class="fc-text"><strong>AI Tools</strong><span>ChatGPT, Gemini &amp; more</span></div>
+            </div>
+            <div class="floating-card card-2">
+              <div class="fc-icon">💻</div>
+              <div class="fc-text"><strong>Web Dev</strong><span>React, Node, Tailwind</span></div>
+            </div>
+            <div class="floating-card card-3">
+              <div class="fc-icon">💰</div>
+              <div class="fc-text"><strong>Online Income</strong><span>Freelance &amp; passive</span></div>
+            </div>
+            <div class="hero-code-card">
+              <div class="code-header"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="code-file">learn.js</span></div>
+              <pre class="code-body"><code><span class="c-key">const</span> <span class="c-var">skills</span> = [<span class="c-str">'AI'</span>, <span class="c-str">'Web'</span>, <span class="c-str">'Mobile'</span>];
+
+<span class="c-key">async function</span> <span class="c-fn">learnAndEarn</span>() {
+  <span class="c-key">for</span> (<span class="c-key">const</span> skill <span class="c-key">of</span> skills) {
+    <span class="c-key">await</span> abduseeTips.<span class="c-fn">master</span>(skill);
+  }
+  <span class="c-key">return</span> <span class="c-str">"🚀 Ready to build!"</span>;
+}</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         STATS COUNTER
+    ═══════════════════════════════════════════════ -->
+    <section class="stats-section" aria-labelledby="statsHeading">
+      <h2 id="statsHeading" class="sr-only">Platform Statistics</h2>
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item" data-animate="fade-up">
+            <div class="stat-number" data-count="200" data-suffix="+">0</div>
+            <div class="stat-label">Free Tutorials</div>
+          </div>
+          <div class="stat-item" data-animate="fade-up" data-delay="100">
+            <div class="stat-number" data-count="25" data-suffix="K+">0</div>
+            <div class="stat-label">Active Learners</div>
+          </div>
+          <div class="stat-item" data-animate="fade-up" data-delay="200">
+            <div class="stat-number" data-count="50" data-suffix="+">0</div>
+            <div class="stat-label">AI Tools Covered</div>
+          </div>
+          <div class="stat-item" data-animate="fade-up" data-delay="300">
+            <div class="stat-number" data-count="98" data-suffix="%">0</div>
+            <div class="stat-label">Student Satisfaction</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         CATEGORIES GRID
+    ═══════════════════════════════════════════════ -->
+    <section class="section categories-section" id="tutorials" aria-labelledby="catHeading">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <div class="section-eyebrow">What We Teach</div>
+          <h2 id="catHeading" class="section-title">Choose Your Learning Path</h2>
+          <p class="section-desc">Eight carefully curated learning tracks, from AI automation to building real income online.</p>
+        </div>
+        <div class="categories-grid">
+          <a href="#ai-tools" class="cat-card cat-ai" data-animate="fade-up" data-delay="0">
+            <div class="cat-icon-wrap"><span class="cat-icon">🤖</span></div>
+            <h3 class="cat-name">AI Tools &amp; Automation</h3>
+            <p class="cat-count">32 tutorials</p>
+            <div class="cat-arrow">→</div>
+          </a>
+          <a href="#tutorials" class="cat-card cat-prog" data-animate="fade-up" data-delay="80">
+            <div class="cat-icon-wrap"><span class="cat-icon">💻</span></div>
+            <h3 class="cat-name">Programming</h3>
+            <p class="cat-count">48 tutorials</p>
+            <div class="cat-arrow">→</div>
+          </a>
+          <a href="#tutorials" class="cat-card cat-web" data-animate="fade-up" data-delay="160">
+            <div class="cat-icon-wrap"><span class="cat-icon">🌐</span></div>
+            <h3 class="cat-name">Web Development</h3>
+            <p class="cat-count">55 tutorials</p>
+            <div class="cat-arrow">→</div>
+          </a>
+          <a href="#tutorials" class="cat-card cat-mobile" data-animate="fade-up" data-delay="240">
+            <div class="cat-icon-wrap"><span class="cat-icon">📱</span></div>
+            <h3 class="cat-name">Mobile App Dev</h3>
+            <p class="cat-count">28 tutorials</p>
+            <div class="cat-arrow">→</div>
+          </a>
+          <a href="#income" class="cat-card cat-income" data-animate="fade-up" data-delay="0">
+            <div class="cat-icon-wrap"><span class="cat-icon">💰</span></div>
+            <h3 class="cat-name">Online Income</h3>
+            <p class="cat-count">19 guides</p>
+            <div class="cat-arrow">→</div>
+          </a>
+          <a href="#income" class="cat-card cat-freelance" data-animate="fade-up" data-delay="80">
+            <div class="cat-icon-wrap"><span class="cat-icon">🧑‍💼</span></div>
+            <h3 class="cat-name">Freelancing</h3>
+            <p class="cat-count">22 guides</p>
+            <div class="cat-arrow">→</div>
+          </a>
+          <a href="#blog" class="cat-card cat-news" data-animate="fade-up" data-delay="160">
+            <div class="cat-icon-wrap"><span class="cat-icon">📰</span></div>
+            <h3 class="cat-name">Tech News</h3>
+            <p class="cat-count">Weekly updates</p>
+            <div class="cat-arrow">→</div>
+          </a>
+          <a href="#blog" class="cat-card cat-digital" data-animate="fade-up" data-delay="240">
+            <div class="cat-icon-wrap"><span class="cat-icon">⚡</span></div>
+            <h3 class="cat-name">Digital Skills</h3>
+            <p class="cat-count">35 tutorials</p>
+            <div class="cat-arrow">→</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         FEATURED ARTICLES / BLOG
+    ═══════════════════════════════════════════════ -->
+    <section class="section" id="blog" aria-labelledby="blogHeading">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <div class="section-eyebrow">Latest Content</div>
+          <h2 id="blogHeading" class="section-title">Fresh Tips &amp; Tutorials</h2>
+          <p class="section-desc">Practical guides written from real projects and tested in the field.</p>
+        </div>
+        <div class="posts-grid" id="postsGrid">
+
+          <article class="post-card" data-tags="ai python automation" data-animate="fade-up" data-delay="0">
+            <div class="post-img-wrap">
+              <div class="post-img post-img-ai" aria-hidden="true"></div>
+              <span class="post-tag tag-ai">AI Tools</span>
+            </div>
+            <div class="post-body">
+              <div class="post-meta">
+                <time datetime="2025-06-15">Jun 15, 2025</time>
+                <span class="post-read">⏱ 6 min</span>
+              </div>
+              <h3 class="post-title">How to Build Your Own AI Chatbot with ChatGPT API in 2025</h3>
+              <p class="post-excerpt">A complete walkthrough on integrating the OpenAI API into a Python or Node.js project — with system prompts, memory, and production-ready deployment.</p>
+              <a href="#" class="post-read-more">Read Guide <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="post-card" data-tags="web react javascript" data-animate="fade-up" data-delay="80">
+            <div class="post-img-wrap">
+              <div class="post-img post-img-web" aria-hidden="true"></div>
+              <span class="post-tag tag-web">Web Dev</span>
+            </div>
+            <div class="post-body">
+              <div class="post-meta">
+                <time datetime="2025-06-10">Jun 10, 2025</time>
+                <span class="post-read">⏱ 9 min</span>
+              </div>
+              <h3 class="post-title">React 19 Features Every Developer Needs to Know Right Now</h3>
+              <p class="post-excerpt">Exploring React Compiler, Server Components, and the new actions API — what they actually mean for your codebase and when to upgrade.</p>
+              <a href="#" class="post-read-more">Read Guide <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="post-card" data-tags="income freelancing money" data-animate="fade-up" data-delay="160">
+            <div class="post-img-wrap">
+              <div class="post-img post-img-income" aria-hidden="true"></div>
+              <span class="post-tag tag-income">Online Income</span>
+            </div>
+            <div class="post-body">
+              <div class="post-meta">
+                <time datetime="2025-06-05">Jun 5, 2025</time>
+                <span class="post-read">⏱ 7 min</span>
+              </div>
+              <h3 class="post-title">5 Ways to Earn $1,000/Month as a Developer in 2025</h3>
+              <p class="post-excerpt">Freelancing, SaaS, content creation, tutoring, and API products — real strategies with realistic timelines that work for developers at all levels.</p>
+              <a href="#" class="post-read-more">Read Guide <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="post-card" data-tags="mobile flutter dart" data-animate="fade-up" data-delay="0">
+            <div class="post-img-wrap">
+              <div class="post-img post-img-mobile" aria-hidden="true"></div>
+              <span class="post-tag tag-mobile">Mobile</span>
+            </div>
+            <div class="post-body">
+              <div class="post-meta">
+                <time datetime="2025-05-28">May 28, 2025</time>
+                <span class="post-read">⏱ 11 min</span>
+              </div>
+              <h3 class="post-title">Flutter vs React Native in 2025: Which to Learn for Freelance Jobs?</h3>
+              <p class="post-excerpt">A head-to-head comparison based on job market data, learning curve, performance benchmarks, and real client demand in 2025.</p>
+              <a href="#" class="post-read-more">Read Guide <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="post-card" data-tags="python programming automation" data-animate="fade-up" data-delay="80">
+            <div class="post-img-wrap">
+              <div class="post-img post-img-python" aria-hidden="true"></div>
+              <span class="post-tag tag-prog">Programming</span>
+            </div>
+            <div class="post-body">
+              <div class="post-meta">
+                <time datetime="2025-05-20">May 20, 2025</time>
+                <span class="post-read">⏱ 8 min</span>
+              </div>
+              <h3 class="post-title">Python Automation Scripts That Will Save You 10 Hours a Week</h3>
+              <p class="post-excerpt">File management, email automation, web scraping, and report generation — six ready-to-use Python scripts with full code and explanations.</p>
+              <a href="#" class="post-read-more">Read Guide <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="post-card" data-tags="freelancing digital skills upwork" data-animate="fade-up" data-delay="160">
+            <div class="post-img-wrap">
+              <div class="post-img post-img-freelance" aria-hidden="true"></div>
+              <span class="post-tag tag-freelance">Freelancing</span>
+            </div>
+            <div class="post-body">
+              <div class="post-meta">
+                <time datetime="2025-05-12">May 12, 2025</time>
+                <span class="post-read">⏱ 5 min</span>
+              </div>
+              <h3 class="post-title">How to Land Your First Upwork Client with Zero Reviews</h3>
+              <p class="post-excerpt">The exact proposal strategy, profile setup, and niche selection that helped dozens of our readers break through Upwork's cold-start barrier.</p>
+              <a href="#" class="post-read-more">Read Guide <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+        </div>
+        <div class="no-results" id="noResults" role="status" aria-live="polite" style="display:none">
+          <div class="no-results-icon">🔍</div>
+          <h3>No articles match your search</h3>
+          <p>Try different keywords or browse all categories above.</p>
+        </div>
+        <div class="section-cta" data-animate="fade-up">
+          <a href="#tutorials" class="btn-outline">View All Articles</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         AI TOOLS SECTION
+    ═══════════════════════════════════════════════ -->
+    <section class="section section-alt" id="ai-tools" aria-labelledby="aiHeading">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <div class="section-eyebrow">AI Tools Directory</div>
+          <h2 id="aiHeading" class="section-title">Top AI Tools Covered This Month</h2>
+          <p class="section-desc">We test and review the latest AI tools so you can use them productively from day one.</p>
+        </div>
+        <div class="tools-grid">
+          <div class="tool-card" data-animate="fade-up" data-delay="0">
+            <div class="tool-header">
+              <div class="tool-logo tool-chatgpt">GPT</div>
+              <div class="tool-meta">
+                <h3 class="tool-name">ChatGPT</h3>
+                <span class="tool-category">Conversational AI</span>
+              </div>
+              <div class="tool-rating" aria-label="Rating: 5 out of 5">⭐ 5.0</div>
+            </div>
+            <p class="tool-desc">The most versatile AI assistant for writing, coding, analysis, and automation. Our full tutorial covers GPT-4o, custom GPTs, and API integration.</p>
+            <div class="tool-footer">
+              <span class="tool-badge tool-free">Free + Pro</span>
+              <a href="#" class="tool-link">Full Tutorial →</a>
+            </div>
+          </div>
+          <div class="tool-card" data-animate="fade-up" data-delay="80">
+            <div class="tool-header">
+              <div class="tool-logo tool-claude">CLD</div>
+              <div class="tool-meta">
+                <h3 class="tool-name">Claude</h3>
+                <span class="tool-category">AI Assistant</span>
+              </div>
+              <div class="tool-rating" aria-label="Rating: 4.9 out of 5">⭐ 4.9</div>
+            </div>
+            <p class="tool-desc">Anthropic's Claude excels at long-form writing, code review, and nuanced reasoning. Great for developers and content creators who need depth.</p>
+            <div class="tool-footer">
+              <span class="tool-badge tool-free">Free + Pro</span>
+              <a href="#" class="tool-link">Full Tutorial →</a>
+            </div>
+          </div>
+          <div class="tool-card" data-animate="fade-up" data-delay="160">
+            <div class="tool-header">
+              <div class="tool-logo tool-midjourney">MJ</div>
+              <div class="tool-meta">
+                <h3 class="tool-name">Midjourney</h3>
+                <span class="tool-category">AI Image Generation</span>
+              </div>
+              <div class="tool-rating" aria-label="Rating: 4.8 out of 5">⭐ 4.8</div>
+            </div>
+            <p class="tool-desc">The gold standard for AI art and design. Learn prompt engineering, style parameters, and how to use Midjourney for freelance design income.</p>
+            <div class="tool-footer">
+              <span class="tool-badge tool-paid">Paid</span>
+              <a href="#" class="tool-link">Full Tutorial →</a>
+            </div>
+          </div>
+          <div class="tool-card" data-animate="fade-up" data-delay="0">
+            <div class="tool-header">
+              <div class="tool-logo tool-gemini">GEM</div>
+              <div class="tool-meta">
+                <h3 class="tool-name">Gemini</h3>
+                <span class="tool-category">Google AI</span>
+              </div>
+              <div class="tool-rating" aria-label="Rating: 4.7 out of 5">⭐ 4.7</div>
+            </div>
+            <p class="tool-desc">Google's multimodal AI integrates with Docs, Sheets, and Gmail. Our guide covers the free tier, Gemini API, and productivity automation.</p>
+            <div class="tool-footer">
+              <span class="tool-badge tool-free">Free + Pro</span>
+              <a href="#" class="tool-link">Full Tutorial →</a>
+            </div>
+          </div>
+          <div class="tool-card" data-animate="fade-up" data-delay="80">
+            <div class="tool-header">
+              <div class="tool-logo tool-cursor">CUR</div>
+              <div class="tool-meta">
+                <h3 class="tool-name">Cursor AI</h3>
+                <span class="tool-category">AI Code Editor</span>
+              </div>
+              <div class="tool-rating" aria-label="Rating: 4.9 out of 5">⭐ 4.9</div>
+            </div>
+            <p class="tool-desc">The AI-first code editor that understands your entire codebase. Speed up development by 5x with Cursor's composer, chat, and auto-complete.</p>
+            <div class="tool-footer">
+              <span class="tool-badge tool-free">Free + Pro</span>
+              <a href="#" class="tool-link">Full Tutorial →</a>
+            </div>
+          </div>
+          <div class="tool-card" data-animate="fade-up" data-delay="160">
+            <div class="tool-header">
+              <div class="tool-logo tool-n8n">N8N</div>
+              <div class="tool-meta">
+                <h3 class="tool-name">n8n Automation</h3>
+                <span class="tool-category">Workflow Automation</span>
+              </div>
+              <div class="tool-rating" aria-label="Rating: 4.8 out of 5">⭐ 4.8</div>
+            </div>
+            <p class="tool-desc">Open-source automation that connects APIs, databases, and AI models. Build profitable automation services for small businesses without code.</p>
+            <div class="tool-footer">
+              <span class="tool-badge tool-free">Free OSS</span>
+              <a href="#" class="tool-link">Full Tutorial →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         ONLINE INCOME SECTION
+    ═══════════════════════════════════════════════ -->
+    <section class="section income-section" id="income" aria-labelledby="incomeHeading">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <div class="section-eyebrow">Earn With Your Skills</div>
+          <h2 id="incomeHeading" class="section-title">Turn Skills Into Income</h2>
+          <p class="section-desc">Real strategies — not theory — to build sustainable online income as a developer or digital creator.</p>
+        </div>
+        <div class="income-grid">
+          <div class="income-card" data-animate="fade-up" data-delay="0">
+            <div class="income-icon">🧑‍💼</div>
+            <h3>Freelance Development</h3>
+            <p>Land clients on Upwork, Fiverr, and Toptal. Build a profile that wins jobs at premium rates even without prior reviews.</p>
+            <div class="income-range">$500 – $5,000/month</div>
+            <a href="#" class="income-link">Start Guide →</a>
+          </div>
+          <div class="income-card" data-animate="fade-up" data-delay="80">
+            <div class="income-icon">🤖</div>
+            <h3>AI Automation Agency</h3>
+            <p>Build and sell AI-powered automation systems to local businesses. One workflow can earn $300–$2,000 per client.</p>
+            <div class="income-range">$1,000 – $8,000/month</div>
+            <a href="#" class="income-link">Start Guide →</a>
+          </div>
+          <div class="income-card" data-animate="fade-up" data-delay="160">
+            <div class="income-icon">📹</div>
+            <h3>Tech Content Creation</h3>
+            <p>Build a YouTube channel or blog around tutorials. Monetize through AdSense, sponsorships, and affiliate income.</p>
+            <div class="income-range">$200 – $3,000/month</div>
+            <a href="#" class="income-link">Start Guide →</a>
+          </div>
+          <div class="income-card" data-animate="fade-up" data-delay="240">
+            <div class="income-icon">📦</div>
+            <h3>Digital Products &amp; SaaS</h3>
+            <p>Sell templates, courses, tools, or SaaS products. Build once, earn passively with no client dependency.</p>
+            <div class="income-range">$300 – $10,000/month</div>
+            <a href="#" class="income-link">Start Guide →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         FEATURED VIDEOS
+    ═══════════════════════════════════════════════ -->
+    <section class="section section-alt" aria-labelledby="videosHeading">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <div class="section-eyebrow">Watch &amp; Learn</div>
+          <h2 id="videosHeading" class="section-title">Featured Video Tutorials</h2>
+          <p class="section-desc">Follow along on YouTube for in-depth walkthroughs with full source code.</p>
+        </div>
+        <div class="videos-grid">
+          <div class="video-card" data-animate="fade-up" data-delay="0">
+            <div class="video-thumb video-thumb-1" role="img" aria-label="Video: Build a Full-Stack AI App">
+              <button class="play-btn" aria-label="Play: Build a Full-Stack AI App with Python &amp; ChatGPT">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </button>
+              <div class="video-duration">18:42</div>
+            </div>
+            <div class="video-info">
+              <span class="video-tag">AI + Python</span>
+              <h3 class="video-title">Build a Full-Stack AI App with Python &amp; ChatGPT</h3>
+              <div class="video-meta">128K views • Jun 2025</div>
+            </div>
+          </div>
+          <div class="video-card" data-animate="fade-up" data-delay="80">
+            <div class="video-thumb video-thumb-2" role="img" aria-label="Video: Responsive Website from Scratch">
+              <button class="play-btn" aria-label="Play: Responsive Website from Scratch in 2 Hours">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </button>
+              <div class="video-duration">2:04:15</div>
+            </div>
+            <div class="video-info">
+              <span class="video-tag">Web Dev</span>
+              <h3 class="video-title">Responsive Website from Scratch in 2 Hours (Full Course)</h3>
+              <div class="video-meta">87K views • May 2025</div>
+            </div>
+          </div>
+          <div class="video-card" data-animate="fade-up" data-delay="160">
+            <div class="video-thumb video-thumb-3" role="img" aria-label="Video: Make Money with n8n Automation">
+              <button class="play-btn" aria-label="Play: Make Money with n8n Automation — Real Client Workflow">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </button>
+              <div class="video-duration">34:19</div>
+            </div>
+            <div class="video-info">
+              <span class="video-tag">Income</span>
+              <h3 class="video-title">Make Money with n8n Automation — Real Client Workflow</h3>
+              <div class="video-meta">56K views • May 2025</div>
+            </div>
+          </div>
+        </div>
+        <div class="section-cta" data-animate="fade-up">
+          <a href="https://youtube.com/@AbduseeTips" target="_blank" rel="noopener noreferrer" class="btn-outline">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            Subscribe on YouTube
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         TESTIMONIALS
+    ═══════════════════════════════════════════════ -->
+    <section class="section" aria-labelledby="testimonialsHeading">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <div class="section-eyebrow">Student Stories</div>
+          <h2 id="testimonialsHeading" class="section-title">What Learners Say</h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card" data-animate="fade-up" data-delay="0">
+            <div class="testi-stars" aria-label="5 stars">★★★★★</div>
+            <p class="testi-text">"I landed my first $500 freelance project three weeks after following the Upwork guide. The step-by-step approach made it actually doable."</p>
+            <div class="testi-author">
+              <div class="testi-avatar" aria-hidden="true">AK</div>
+              <div><strong>Ahmed Kedir</strong><span>Addis Ababa, Ethiopia</span></div>
+            </div>
+          </div>
+          <div class="testimonial-card featured-testi" data-animate="fade-up" data-delay="100">
+            <div class="testi-stars" aria-label="5 stars">★★★★★</div>
+            <p class="testi-text">"The ChatGPT API tutorial was the clearest I've found anywhere. I built a working AI customer support bot in one afternoon and deployed it the same day."</p>
+            <div class="testi-author">
+              <div class="testi-avatar" aria-hidden="true">FY</div>
+              <div><strong>Fatuma Yusuf</strong><span>Nairobi, Kenya</span></div>
+            </div>
+          </div>
+          <div class="testimonial-card" data-animate="fade-up" data-delay="200">
+            <div class="testi-stars" aria-label="5 stars">★★★★★</div>
+            <p class="testi-text">"I had zero knowledge of React. After the web dev series, I built and launched a portfolio site and got hired remotely within 2 months. Life-changing."</p>
+            <div class="testi-author">
+              <div class="testi-avatar" aria-hidden="true">MH</div>
+              <div><strong>Mohammed Hassan</strong><span>Mogadishu, Somalia</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         NEWSLETTER
+    ═══════════════════════════════════════════════ -->
+    <section class="newsletter-section" aria-labelledby="newsletterHeading">
+      <div class="container">
+        <div class="newsletter-card" data-animate="fade-up">
+          <div class="newsletter-content">
+            <div class="newsletter-icon" aria-hidden="true">📬</div>
+            <h2 id="newsletterHeading">Get Weekly Tech Tips in Your Inbox</h2>
+            <p>Join 25,000+ learners getting exclusive tutorials, AI tool reviews, and income strategies every Tuesday. Free, forever.</p>
+            <form class="newsletter-form" id="newsletterForm" novalidate>
+              <div class="form-inline">
+                <input type="email" id="nlEmail" name="email" placeholder="you@email.com" required autocomplete="email" aria-label="Email address for newsletter" aria-required="true" />
+                <button type="submit" class="btn-primary" id="nlBtn">
+                  <span class="btn-text">Subscribe Free</span>
+                  <span class="btn-loading" style="display:none">Subscribing…</span>
+                </button>
+              </div>
+              <div class="form-msg" id="nlMsg" role="status" aria-live="polite"></div>
+              <p class="form-disclaimer">No spam. Unsubscribe anytime. We respect your privacy.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         ABOUT FOUNDER
+    ═══════════════════════════════════════════════ -->
+    <section class="section" id="about" aria-labelledby="aboutHeading">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual" data-animate="fade-up">
+            <div class="founder-card">
+              <div class="founder-avatar" aria-label="Abdusalam Ahmed Kasim founder avatar">
+                <div class="founder-avatar-inner">A</div>
+              </div>
+              <div class="founder-badges">
+                <div class="founder-badge"><span>🤖</span> AI Educator</div>
+                <div class="founder-badge"><span>💻</span> Full-Stack Dev</div>
+                <div class="founder-badge"><span>🎬</span> Content Creator</div>
+                <div class="founder-badge"><span>🌍</span> East Africa</div>
+              </div>
+              <div class="founder-stats">
+                <div class="f-stat"><strong>5+</strong><span>Years Dev</span></div>
+                <div class="f-stat"><strong>200+</strong><span>Tutorials</span></div>
+                <div class="f-stat"><strong>25K+</strong><span>Students</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="about-text" data-animate="fade-up" data-delay="100">
+            <div class="section-eyebrow">Meet the Founder</div>
+            <h2 id="aboutHeading" class="section-title">Abdusalam Ahmed Kasim</h2>
+            <p>I'm a full-stack developer, AI educator, and the creator of Abdusee Tips. I started this platform after realizing there were very few high-quality, practical tech resources made for learners in East Africa — and the broader developing world.</p>
+            <p>My mission is simple: make world-class technology education accessible to everyone, everywhere. Every tutorial here comes from real projects, real clients, and real income strategies that I've tested myself.</p>
+            <p>Whether you're learning to code from scratch, exploring AI tools, or building your first freelance income — I'm building this with you in mind.</p>
+            <div class="about-skills">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Flutter</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">AI/ML</span>
+              <span class="skill-tag">n8n</span>
+              <span class="skill-tag">Firebase</span>
+            </div>
+            <div class="about-actions">
+              <a href="https://youtube.com/@AbduseeTips" target="_blank" rel="noopener noreferrer" class="btn-primary">Follow on YouTube</a>
+              <a href="#contact" class="btn-ghost">Get in Touch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         CONTACT
+    ═══════════════════════════════════════════════ -->
+    <section class="section section-alt" id="contact" aria-labelledby="contactHeading">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <div class="section-eyebrow">Get in Touch</div>
+          <h2 id="contactHeading" class="section-title">Contact &amp; Community</h2>
+          <p class="section-desc">Tutorial request? Partnership proposal? Just want to say hi? Every message gets a reply.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info" data-animate="fade-up">
+            <div class="contact-method">
+              <div class="cm-icon">📧</div>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:abdusalema0@gmail.com">abdusalema0@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="cm-icon">💬</div>
+              <div>
+                <strong>Telegram Community</strong>
+                <a href="https://t.me/AbduseeTips" target="_blank" rel="noopener noreferrer">@AbduseeTips</a>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="cm-icon">▶️</div>
+              <div>
+                <strong>YouTube Channel</strong>
+                <a href="https://youtube.com/@AbduseeTips" target="_blank" rel="noopener noreferrer">@AbduseeTips</a>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="cm-icon">🐙</div>
+              <div>
+                <strong>GitHub</strong>
+                <a href="https://github.com/AbduseeTips" target="_blank" rel="noopener noreferrer">github.com/AbduseeTips</a>
+              </div>
+            </div>
+            <div class="contact-social-grid">
+              <a href="https://youtube.com/@AbduseeTips" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="YouTube">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+              <a href="https://github.com/AbduseeTips" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+              <a href="https://t.me/AbduseeTips" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Telegram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+              </a>
+              <a href="https://facebook.com/AbduseeTips" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a href="https://x.com/AbduseeTips" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="X (Twitter)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap" data-animate="fade-up" data-delay="100">
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="cf-row">
+                <div class="cf-group">
+                  <label for="cfName">Full Name <span aria-hidden="true">*</span></label>
+                  <input type="text" id="cfName" name="name" placeholder="Your full name" required autocomplete="name" aria-required="true" />
+                  <div class="cf-error" id="cfNameErr" role="alert"></div>
+                </div>
+                <div class="cf-group">
+                  <label for="cfEmail">Email <span aria-hidden="true">*</span></label>
+                  <input type="email" id="cfEmail" name="email" placeholder="you@email.com" required autocomplete="email" aria-required="true" />
+                  <div class="cf-error" id="cfEmailErr" role="alert"></div>
+                </div>
+              </div>
+              <div class="cf-group">
+                <label for="cfSubject">Subject <span aria-hidden="true">*</span></label>
+                <select id="cfSubject" name="subject" required aria-required="true">
+                  <option value="" disabled selected>Select a topic</option>
+                  <option value="tutorial">Tutorial Request</option>
+                  <option value="partnership">Partnership / Sponsorship</option>
+                  <option value="question">General Question</option>
+                  <option value="feedback">Feedback</option>
+                  <option value="other">Other</option>
+                </select>
+                <div class="cf-error" id="cfSubjectErr" role="alert"></div>
+              </div>
+              <div class="cf-group">
+                <label for="cfMessage">Message <span aria-hidden="true">*</span></label>
+                <textarea id="cfMessage" name="message" rows="5" placeholder="What's on your mind?" required aria-required="true"></textarea>
+                <div class="cf-error" id="cfMessageErr" role="alert"></div>
+              </div>
+              <button type="submit" class="btn-primary btn-full" id="cfBtn">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-loading" style="display:none">Sending…</span>
+              </button>
+              <div class="form-msg" id="cfMsg" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo" aria-label="Abdusee Tips">
+            <div class="logo-mark" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="7" fill="url(#footerLogoGrad)"/><path d="M8 20L14 8L20 20" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 16H18" stroke="white" stroke-width="2.2" stroke-linecap="round"/><defs><linearGradient id="footerLogoGrad" x1="0" y1="0" x2="28" y2="28"><stop offset="0%" stop-color="#0ea5e9"/><stop offset="100%" stop-color="#10b981"/></linearGradient></defs></svg>
+            </div>
+            <span class="logo-text">Abdusee<span class="logo-accent">Tips</span></span>
+          </a>
+          <p class="footer-tagline">Learn. Build. Grow.</p>
+          <p class="footer-desc">Premium tech education for developers, creators, and digital entrepreneurs worldwide.</p>
+          <div class="footer-socials">
+            <a href="https://youtube.com/@AbduseeTips" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="social-icon-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            <a href="https://github.com/AbduseeTips" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="https://t.me/AbduseeTips" target="_blank" rel="noopener noreferrer" aria-label="Telegram" class="social-icon-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+            </a>
+            <a href="https://facebook.com/AbduseeTips" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://x.com/AbduseeTips" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="social-icon-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-nav-group">
+          <h3>Learn</h3>
+          <ul>
+            <li><a href="#tutorials">All Tutorials</a></li>
+            <li><a href="#ai-tools">AI Tools</a></li>
+            <li><a href="#tutorials">Web Development</a></li>
+            <li><a href="#tutorials">Programming</a></li>
+            <li><a href="#tutorials">Mobile Apps</a></li>
+            <li><a href="#income">Online Income</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-group">
+          <h3>Platform</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="mailto:abdusalema0@gmail.com">Email Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-group">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+            <li><a href="affiliate.html">Affiliate Disclosure</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="footerYear"></span> Abdusee Tips by Abdusalam Ahmed Kasim. All rights reserved.</p>
+        <p class="footer-slogan">Learn. Build. Grow. 🚀</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- Cookie Banner -->
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie consent">
+    <p>🍪 We use cookies to improve your experience. <a href="cookies.html">Learn more</a></p>
+    <div class="cookie-actions">
+      <button class="btn-cookie-decline" id="cookieDecline">Decline</button>
+      <button class="btn-primary btn-sm" id="cookieAccept">Accept All</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

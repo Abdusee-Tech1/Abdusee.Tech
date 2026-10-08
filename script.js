@@ -11,8 +11,8 @@
    CONSTANTS & STATE
 ═══════════════════════════════════════════════════════════════ */
 // SUPABASE
-const SUPABASE_URL = 'YOUR_PROJECT_URL';
-const SUPABASE_KEY = 'YOUR_PUBLISHABLE_KEY';
+const SUPABASE_URL = 'https://mgysyujpupyknnrusren.supabase.co';
+const SUPABASE_KEY = 'sb_publishable_E46hbeFFBYIjlOycUbxiFg_npYySCpk';
 
 const supabase = window.supabase.createClient(
     SUPABASE_URL,

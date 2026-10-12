@@ -1,0 +1,157 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login | Abdusee Tech</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f172a;
+  color: #f8fafc;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  background: #1e293b;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, .3);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: center;
+  color: #cbd5e1;
+}
+
+label {
+  display: block;
+  margin: 18px 0 8px;
+}
+
+input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #475569;
+  border-radius: 8px;
+  background: #0f172a;
+  color: white;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 13px;
+  margin-top: 22px;
+  border: none;
+  border-radius: 8px;
+  background: #38bdf8;
+  color: #082f49;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: .6;
+  cursor: wait;
+}
+
+#message {
+  margin-top: 16px;
+  overflow-wrap: anywhere;
+  font-size: 14px;
+}
+
+a {
+  color: #7dd3fc;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+  </style>
+</head>
+<body>
+  <main class="login-box">
+    <h1>Abdusee Tech</h1>
+    <p>Admin Dashboard Login</p><form id="loginForm">
+  <label for="email">Admin Email</label>
+  <input id="email" type="email" required autocomplete="username">
+
+  <label for="password">Password</label>
+  <input id="password" type="password" required autocomplete="current-password">
+
+  <button id="loginButton" type="submit">Sign In</button>
+  <p id="message" role="status"></p>
+</form>
+
+<a href="index.html">Back to Website</a>
+
+  </main>  <script type="module">
+    import { createClient } from
+      'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
+
+    // Replace these placeholders with your Supabase project details.
+    const SUPABASE_URL = 'https://mgysyujpupyknnrusren.supabase.co';
+    const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_E46hbeFFBYIjlOycUbxiFg_npYySCpk';
+
+    const supabase = createClient(
+      SUPABASE_URL,
+      SUPABASE_PUBLISHABLE_KEY
+    );
+
+    const form = document.getElementById('loginForm');
+    const message = document.getElementById('message');
+    const button = document.getElementById('loginButton');
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      message.textContent = '';
+      button.disabled = true;
+
+      try {
+        const email = document.getElementById('email').value.trim();
+        const password = document.getElementById('password').value;
+
+        const { data, error } = await supabase.auth.signInWithPassword({
+          email,
+          password
+        });
+
+        if (error) throw error;
+
+        const { data: admin, error: adminError } = await supabase
+          .from('admin_users')
+          .select('user_id')
+          .eq('user_id', data.user.id)
+          .maybeSingle();
+
+        if (adminError || !admin) {
+          await supabase.auth.signOut();
+          throw new Error('This account is not authorized as an admin.');
+        }
+
+        message.textContent = 'Login successful. Admin access verified.';
+        window.location.href = 'admin-dashboard.html';
+      } catch (error) {
+        message.textContent = error.message || 'Login failed. Please try again.';
+      } finally {
+        button.disabled = false;
+      }
+    });
+  </script></body>
+  </html>
